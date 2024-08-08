@@ -30,6 +30,43 @@
     };
   </script>
   <title>Nirmal's Portfolio</title>
+  <style>
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+    }
+  
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  
+    .left-arrow {
+      left: 0;
+    }
+  
+    .right-arrow {
+      right: 0;
+    }
+  </style>
 </head>
 
 <body class="bg-myColour relative overflow-x-hidden font-display">
@@ -89,9 +126,9 @@
 
   <ul class="fixed text-white bottom-6 left-4">
     <li class="md:mt-4"><a href="https://www.github.com/nirmalshah20519" target="_blank" class="bi bi-github "></a></li>
-    <li class="md:mt-4"><a href="#" class="bi bi-instagram "></a></li>
-    <li class="md:mt-4"><a href="#" class="bi bi-twitter "></a></li>
-    <li class="md:mt-4"><a href="#" class="bi bi-linkedin "></a></li>
+    <li class="md:mt-4"><a href="https://www.instagram.com/nirmal_d_shah/" class="bi bi-instagram "></a></li>
+    <!-- <li class="md:mt-4"><a href="#" class="bi bi-twitter "></a></li> -->
+    <li class="md:mt-4"><a href="www.linkedin.com/in/nirmal-shah-3208321a0" class="bi bi-linkedin "></a></li>
   </ul>
 
 
@@ -114,14 +151,12 @@
   <!-- HOME  -->
 
   <div id="home"
-    class=" lg:p-10 xl:mx-52 lg:mx-44 md:h-screen lg:py-44 xl:py-56 md:mx-24 md:p-6 md:py-52 mx-8 h-screen py-36 px-4">
-    <p class="text-myColour2   xl:text-lg lg:text-md md:text-lg text-md">Hii, my name is</p>
+    class=" lg:p-10 xl:mx-52 lg:mx-44 md:h-screen lg:py-40 xl:py-48 md:mx-24 md:p-6 md:py-48 mx-8 h-screen py-18 px-4">
+    <p class="text-myColour2 xl:text-lg lg:text-md md:text-lg text-md">Hii, my name is</p>
     <p class="xl:text-8xl lg:text-7xl md:text-8xl font-semibold text-white opacity-90 text-4xl"><span id="typed"></span>
     </p>
-    <p class="lg:text-5xl md:text-6xl font-semibold text-gray-400">I build things for the web.</p>
-    <p class="mt-4 xl:text-xl lg:text-lg md:text-3xl text-justify text-cyan-100">I’m a software engineer specializing
-      in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building
-      accessible, human-centered products at Upstatement.</p>
+    <p class="lg:text-4xl md:text-4xl font-semibold text-gray-400"> I build things for the web.</p>
+    <p class="mt-12 xl:text-xl lg:text-lg md:text-3xl text-justify text-cyan-100 leading-3"><span class=" text-5xl text-amber-300">I</span> am a software engineer with a deep passion for <span class=" text-4xl text-amber-300">web development</span>  and a strong commitment to crafting accessible, user-centric digital solutions. I hold a <span class=" text-4xl text-amber-300">Bachelor of Engineering</span> Bachelor of Engineering in Computer Science and a <span class=" text-4xl text-amber-300">M. Tech</span> in Information and Communication Technology with a specialization in <span class=" text-4xl text-amber-300">Machine Learning</span>. My educational background and professional journey reflect my dedication to developing exceptional digital experiences that prioritize human interaction and inclusivity. Currently, I am leveraging my skills to build impactful products at Upstatement, where I focus on enhancing accessibility and user engagement.</p>
     <p
       class="mt-8 xl:p-4 p-2 xl:text-xl md:text-3xl lg:text-lg text-myColour2 hover:text-myColour hover:bg-myColour2 px-8 rounded-xl border border-myColour2 w-fit">
       <a href="https://www.linkedin.com/in/nirmal-shah-3208321a0"><em class="bi bi-linkedin "></em> Checkout my profile !</a>
@@ -147,7 +182,7 @@
           me a lot about HTML & CSS!</p>
       </div>
       <div class="">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.b6dNT1MH468Edsx8Tvj1zQD6D6?pid=ImgDet&w=202&h=202&c=7"
+        <img src="https://res.cloudinary.com/medico-cloud/image/upload/v1723136009/Portfolio/w1_blstbm.jpg"
           alt="Profile image" class="rounded-full mx-auto lg:w-screen">
       </div>
 
@@ -167,9 +202,89 @@
 
   </div>
 
+  <div id="projects" class="py-16 px-4 lg:p-10 xl:mx-52 lg:mx-44 h-screen md:h-screen md:py-44 lg:py-52">
+    <div class="flex mb-8">
+      <p class="text-slate-300 font-bold text-lg md:text-2xl xl:my-2 xl:w-fit md:px-8 xl:px-2">
+        <span class="text-myColour2 text-xl">02.</span> Something I've built.
+      </p>
+      <hr class="bg-white w-96 my-6">
+    </div>
+  
+    <div class="carousel-container flex justify-center overflow-hidden relative">
+  
+      <!-- Left Arrow -->
+      <button class="arrow left-arrow bg-white text-slate-800 z-30 rounded-xl  border border-black  " aria-label="Previous slide" onclick="moveSlide(-1)">&#10094;</button>
+  
+      <!-- Slides -->
+      <div class="slides">
+        <div class="slide">
+          <img src="https://res.cloudinary.com/medico-cloud/image/upload/v1723137140/Portfolio/detect_lsjdsi.gif" alt="Project 1" class="w-full">
+          <div class="description mt-2">
+            <p class="title font-semibold text-blue-500">Featured Project: Monkey Detection System Using YOLOv7</p>
+            <p class="details text-white">A Monkey Detection System using YOLOv7 uses object detection algorithms to accurately identify and track monkeys in real-time video feeds.</p>
+            <p class="links text-blue-500 underline"><a href="https://github.com/nirmalshah20519/MonkeyDetection" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <img style="background-size: contain;" src="https://res.cloudinary.com/medico-cloud/image/upload/v1723140985/Portfolio/recccc_frcthp.jpg" alt="Project 2">
+          <div class="description mt-2">
+            <p class="title font-semibold text-blue-500">RecShorts :A smart intelligent news recommendation site</p>
+            <p class="details text-white">A real-time weather application using APIs.</p>
+            <p class="links text-blue-500 underline"><a href="https://github.com/nirmalshah20519/RecShortsBE" target="_blank">GitHub</a> | <a href="https://rec-shorts.vercel.app/" target="_blank">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img style="background-size: contain;" src="https://res.cloudinary.com/medico-cloud/image/upload/v1723142434/Portfolio/nvkrr_jhjpwy.jpg" alt="Project 2">
+          <div class="description mt-2">
+            <p class="title font-semibold text-blue-500">Dashboard for Orders and Transactions Management</p>
+            <p class="details text-white">A dashboard for adding new products and generating invoices, designed to streamline monthly transaction ledgers and automate communications.</p>
+            <p class="links text-blue-500 underline"><a href="https://github.com/nirmalshah20519/NavkarApperals" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img style="background-size: contain;" src="https://res.cloudinary.com/medico-cloud/image/upload/v1723143809/Portfolio/synapse_p0jfik.jpg" alt="Project 2">
+          <div class="description mt-2">
+            <p class="title font-semibold text-blue-500">Synapse'24</p>
+            <p class="details text-white">Synapse, DAIICT’s annual college fest, unites global artists and creative minds to showcase unique collages, share creative  processes, and transforms into a vibrant night of live music, DJ performances, and dance parties, fostering creative connections and celebrating artistic expression.</p>
+            <p class="links text-blue-500 underline"><a href="http://synapse.daiict.ac.in/" target="_blank">Live Demo</a></p>
+          </div>
+        </div>
+  
+        <!-- Additional slides as needed -->
+      </div>
+  
+      <!-- Right Arrow -->
+      <button class="arrow right-arrow bg-white text-slate-800 rounded-lg border border-black " aria-label="Next slide" onclick="moveSlide(1)">&#10095;</button>
+  
+    </div>
+  </div>
+  
+
+<!-- Slide 1
+<div class="slide">
+  <img src="https://res.cloudinary.com/medico-cloud/image/upload/v1723137140/Portfolio/detect_lsjdsi.gif" alt="Project 1">
+  <div class="description">
+    <p class="title">Featured Project: Monkey Detection System Using YOLOv7</p>
+    <p class="details">A Monkey Detection System using YOLOv7 uses object detection algorithms to accurately identify and track monkeys in real-time video feeds.</p>
+    <p class="links"><a href="https://github.com/nirmalshah20519/MonkeyDetection" target="_blank">GitHub</a></p>
+  </div>
+</div>
+
+Slide 2
+<div class="slide">
+  <img src="./project2.png" alt="Project 2">
+  <div class="description">
+    <p class="title">Featured Project: Weather App</p>
+    <p class="details">A real-time weather application using APIs.</p>
+    <p class="links"><a href="https://github.com/project2" target="_blank">GitHub</a> | <a href="https://project2.com" target="_blank">Live Demo</a></p>
+  </div>
+</div> -->
 
 
-  <!-- Projects -->
+  <!-- Projects
   <div id="projects" class="py-16 px-4 lg:p-10 xl:mx-52 lg:mx-44 h-screen md:h-screen md:py-44 lg:py-52">
 
     <div class="flex mb-8">
@@ -208,7 +323,7 @@
 
 
 
-  </div>
+  </div> -->
 
 
   <div id="experience" class="px-4 lg:p-10 xl:mx-16 lg:mx-0 lg:h-screen lg:py-32 md:py-80 md:px-16">
@@ -226,24 +341,24 @@
           <a href="#pills-home03"
             class="my-2 block bg-transparent  xl:px-1 px-7 pt-4 pb-3.5 text-sm   font-medium uppercase leading-tight text-neutral-100 data-[te-nav-active]:border-r-2 data-[te-nav-active]:border-myColour2 data-[te-nav-actransparent data-[te-nav-active]:text-myColour2 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
             id="pills-home-tab03" data-te-toggle="pill" data-te-target="#pills-home03" data-te-nav-active role="tab"
-            aria-controls="pills-home03" aria-selected="true"> <img src="./radix.jpg"
-              class="inline float-left xl:float-none" width="20px" alt="Radix"> Radixweb</a>
+            aria-controls="pills-home03" aria-selected="true"> <img src="https://res.cloudinary.com/medico-cloud/image/upload/v1692189295/Portfolio/radix_rdrrmh.png"
+              class="inline float-left xl:float-none" width="65px" alt="Radix"> Radixweb</a>
         </li>
         <li role="profile" class="flex-grow text-right">
           <a href="#pills-profile03"
             class="my-2 block bg-transparent xl:px-2 px-7 pt-4 pb-3.5 text-sm   font-medium uppercase leading-tight text-neutral-100 data-[te-nav-active]:border-r-2 data-[te-nav-active]:border-myColour2 data-[te-nav-active]:!bg-transparent data-[te-nav-active]:text-myColour2 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
             id="pills-profile-tab03" data-te-toggle="pill" data-te-target="#pills-profile03" role="tab"
             aria-controls="pills-profile03" aria-selected="false"> <img
-              src="https://tse1.mm.bing.net/th/id/OIP.pjxAGSGs_ed_pAMaCc8TtwHaGB?w=213&h=180&c=7&r=0&o=5&pid=1.7"
-              class="inline float-left xl:float-none" width="20px" alt="GDSC"> GDSC</a>
+              src="https://res.cloudinary.com/medico-cloud/image/upload/v1692188672/Portfolio/gdsc_ure3s2.png"
+              class="inline float-left xl:float-none" width="65px" alt="GDSC"> GDSC</a>
         </li>
         <li role="contact" class="flex-grow text-right">
           <a href="#pills-contact03"
             class="my-2 block bg-transparent xl:px-2 px-7 pt-4 pb-3.5 text-sm   font-medium uppercase leading-tight text-neutral-100 data-[te-nav-active]:border-r-2 data-[te-nav-active]:border-myColour2 data-[te-nav-active]:!bg-transparent data-[te-nav-active]:text-myColour2 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
             id="pills-contact-tab03" data-te-toggle="pill" data-te-target="#pills-contact03" role="tab"
             aria-controls="pills-contact03" aria-selected="false"> <img
-              src="https://tse2.mm.bing.net/th/id/OIP.3_1c2smoCEDRyGQmIxT1IAAAAA?w=135&h=150&c=7&r=0&o=5&pid=1.7"
-              class="inline mb-2 float-left xl:float-none" width="20px" alt="Anon"> Anon Global Foundation</a>
+              src="https://res.cloudinary.com/medico-cloud/image/upload/v1723136189/Portfolio/anon_global_foundation_logo_h57fxp.jpg"
+              class="inline mb-2 float-left xl:float-none" width="65px" alt="Anon"> Anon Global Foundation</a>
         </li>
       </ul>
       <div class="my-2">
@@ -338,6 +453,33 @@
       typeSpeed: 120,
       loop: true
     });
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+
+      if (index >= totalSlides) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+      } else {
+        currentSlide = index;
+      }
+
+      slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+    }
+
+    function moveSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showSlide(currentSlide);
+    });
+
+
   </script>
 </body>
 
