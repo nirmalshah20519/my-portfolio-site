@@ -37,17 +37,17 @@
       max-width: 800px;
       margin: auto;
     }
-  
+
     .slides {
       display: flex;
       transition: transform 0.5s ease-in-out;
     }
-  
+
     .slide {
       min-width: 100%;
       box-sizing: border-box;
     }
-  
+
     .arrow {
       position: absolute;
       top: 50%;
@@ -58,13 +58,41 @@
       padding: 1rem;
       cursor: pointer;
     }
-  
+
     .left-arrow {
       left: 0;
     }
-  
+
     .right-arrow {
       right: 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      nav .flex, .carousel-container, .slides .slide img {
+        flex-direction: column;
+      }
+
+      .description {
+        padding: 10px;
+      }
+
+      .arrow {
+        padding: 0.5rem;
+      }
+
+      .experience .list-disc {
+        columns: 1;
+      }
+
+      .mx-8 {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
     }
   </style>
 </head>
@@ -151,7 +179,7 @@
   <!-- HOME  -->
 
   <div id="home"
-    class=" lg:p-10 xl:mx-52 lg:mx-44 md:h-screen lg:py-40 xl:py-48 md:mx-24 md:p-6 md:py-48 mx-8 h-screen py-18 px-4">
+    class=" lg:p-10 xl:mx-52 lg:mx-44 md:h-screen py-24 lg:py-40 xl:py-48 md:mx-24 md:p-6 md:py-48 mx-8 h-screen py-18 px-4">
     <p class="text-myColour2 xl:text-lg lg:text-md md:text-lg text-md">Hii, my name is</p>
     <p class="xl:text-8xl lg:text-7xl md:text-8xl font-semibold text-white opacity-90 text-4xl"><span id="typed"></span>
     </p>
